@@ -21,7 +21,7 @@ const CrackDetector = () => {
     formData.append('file', selectedImage);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/detect/', {
+      const response = await fetch('https://salty-lies-strive.loca.lt/detect/', {
         method: 'POST',
         body: formData,
       });
