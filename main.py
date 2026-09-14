@@ -10,7 +10,7 @@ import os
 
 app = FastAPI(title="WATAD Crack Detection API")
 
-print("جاري تحميل موديل SAHI...")
+print("Model SAHI...")
 detection_model = AutoDetectionModel.from_pretrained(
     model_type='yolov8',
     model_path='best.pt',
