@@ -9,6 +9,9 @@ import tempfile
 import os
 
 app = FastAPI(title="WATAD Crack Detection API")
+@app.get("/")
+def root():
+    return {"status": "online", "message": "WATAD CV API is running successfully!"}
 
 print("Model SAHI...")
 detection_model = AutoDetectionModel.from_pretrained(
